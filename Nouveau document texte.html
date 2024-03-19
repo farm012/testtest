@@ -1,0 +1,15 @@
+<a id="downloadLink" href="#" onclick="downloadFile()">Click here to install</a>
+
+<script>
+function downloadFile() {
+  var url = 'https://www.curseforge.com/minecraft/mc-mods/sorceryfight/download/5191759#:~:text=download%20didn%E2%80%99t%20start%2C-,try%20again,-STILL%20DOWNLOADING%20MANUALLY'; // Replace 'path_to_your_file' with the URL or relative path to your file
+  var fileName = 'file_name.png'; // Replace 'file_name.extension' with the desired file name and extension
+  
+  var link = document.createElement('a');
+  link.href = url;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
